@@ -1,0 +1,280 @@
+.index-content {
+    .intro-row {
+        direction: ltr;
+        &.background-image {
+            background-image: url("~/assets/media/svg/index/intro-bg.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 65rem;
+            width: 100%;
+            z-index: -1;
+            max-width: 1900px;
+            margin: auto;
+            background-position: center;
+        }
+        @media (max-width: 991px) {
+            &.background-image {
+                background-size: cover !important;
+                min-height: 100vh !important;
+                background-position: unset !important;
+            }
+        }
+        .row {
+            direction: ltr;
+        }
+        .text-box {
+            padding-top: 1rem;
+            font-family: 'IRANYekanRegular';
+          flex-grow: 1;
+            .main-title {
+                color: #000000;
+                font-size: 58px;
+                font-weight: 500;
+                margin-left: 25%;
+                margin-bottom: 2.5% ;
+            }
+            .sub-title {
+                color: #00affb;
+                font-size: 128px;
+                font-weight: 500;
+                margin-right: 15%;
+                margin-bottom: 2rem;
+            }
+            a.text-decoration-none {
+                margin-right: 50%;
+                @media (max-width: 991px) {
+                    margin-right: 0 !important
+                }
+            }
+            .btn.btn-primary {
+                color: #f7fcfe;
+                font-size: 19px;
+                background: #00affb;
+                border-radius: 23.5px;
+                outline: none !important;
+                border: none !important;
+                padding: 0.75rem 2rem;
+                margin-right: auto;
+                margin-top: 12.5%;
+              /* narm bayad beshe */
+                @keyframes shining {
+                  0% {
+                    box-shadow:0 5px 25px #0899d7;
+                  }
+                  50% {
+                    box-shadow: 0 0 0 rgba(0,0,0,0);
+                  }
+                  100% {
+                    box-shadow:0 5px 25px #0899d7;
+                  }
+                }
+                animation-fill-mode: forwards;
+                animation:  shining 1.7s linear infinite;
+            }
+        }
+    }
+    .table-row {
+        max-width: 1900px;
+        margin: auto;
+      margin-top: -1.5rem;
+
+    }
+    .reasons-row {
+        font-family: iransansRegular;
+        direction: rtl;
+        padding: 5rem 0;
+        .custom-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .main-title {
+            font-size: 36px;
+            color: #fff;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .reasons-box {
+            display: flex;
+            @media (max-width: 991px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                margin: 1.25rem 0;
+            }
+            .reasons-image {
+                width: 10rem;
+                margin-right: 0.25rem;
+            }
+            .reasons-text {
+                text-align: center;
+                @media (max-width: 991px) {
+                    margin-bottom: 0.75rem !important;
+                }
+                .reasons-header {
+                    color: #36dbdf;
+                    font-size: 24px;
+                    margin-bottom: 0.5rem;
+                    width: 100%;
+                }
+                .reasons-label {
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .application-row {
+        @media (max-width: 991px) {
+          background-image: url("~/assets/media/svg/index/application-bg.svg");
+        }
+        min-height: 742px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        position: relative;
+        .bg-container{
+          width: 100%;
+          max-width: 1900px;
+          @media (max-width: 991px) {
+            display: none !important;
+          }
+          .bg-img {
+            width: 100%
+          }
+        }
+        .container-xl {
+          position: absolute;
+          @media (max-width: 991px) {
+            position: static;
+          }
+            .row {
+                .col-md-6 {
+                    font-family: iransansRegular;
+                    text-align: right;
+                    img {
+                        width: 100%;
+                    }
+                    .main-title {
+                        color: #86e9ec;
+                        font-size: 30px;
+                    }
+                    .main-text {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    .apple-button {
+                        background: #0e0e0e;
+                        color: #fff;
+                        font-size: 12px;
+                        padding: 0.5rem 1.5rem;
+                        border-radius: 0.5rem;
+                        .fa.fa-apple {
+                            font-size: 14px;
+                        }
+                    }
+                    .google-play-button {
+                        background: #5bfcff;
+                        color: #605c5c;
+                        font-size: 12px;
+                        padding: 0.5rem 1.5rem;
+                        border-radius: 0.5rem;
+                        .fa.fa-google {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .last-row {
+        .container-xl {
+            .row {
+                @media (max-width: 991px) {
+                    flex-direction: column-reverse;
+                    align-content: center;
+                }
+                .last-row-image {
+                    background-size: contain;
+                    img {
+                        width: 100%;
+                        position: relative;
+                        left: -22%;
+                        @media (max-width: 991px) {
+                            position: static;
+                            display: none !important;
+                        }
+                    }
+                    .res-img {
+                        display: none;
+                        width: 100%;
+                        @media (max-width: 991px) {
+                            display: block !important;
+                        }
+                    }
+                }
+                .last-row-text {
+                    .last-row-box {
+                        .img-box {
+                            margin: 1rem 0rem 1rem 1rem;
+                            box-shadow: 0 0 6px #00000080;
+                            border-radius: 50%;
+                            width: 4.5rem;
+                            height: 4.5rem;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            align-items: center;
+                            flex: 0 0 auto;
+                            .img-field {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                        .text-box {
+                            font-family: iransansRegular;
+                            .main-title {
+                                font-size: 14px;
+                                margin-bottom: 0.5rem;
+                                &.red-color {
+                                    color: #f84837;
+                                }
+                                &.green-color {
+                                    color: #27bf74;
+                                }
+                                &.yellow-color {
+                                    color: #ffab01;
+                                }
+                                &.blue-color {
+                                    color: #4b68ff;
+                                }
+                            }
+                            .text-title {
+                                font-size: 12px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 509px) {
+    .last-row-box {
+        flex-direction: column !important;
+        font-size: 14px !important;
+        text-align: center;
+        margin: 0.75rem 0;
+    }
+    .text-title {
+        text-align: center;
+    }
+    .main-title {
+        font-size: 16px !important;
+        text-align: center;
+    }
+}
+

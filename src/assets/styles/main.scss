@@ -1,0 +1,60 @@
+@import './index/firstPage.scss';
+@import './_vars/index.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+  scroll-behavior: smooth;
+     ::-webkit-scrollbar {
+        background-color: #120f28;
+        width: 3px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-color: #008cff;
+        border-radius: 3px;
+    }
+    
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IranSans';
+}
+#app {
+}
+.blue-light-title{
+  @apply text-3xl text-[#36dbdf];
+  @media screen and (max-width:650px) {
+    @apply text-xl
+  }
+}
+.body-section{
+  @apply leading-10 text-justify text-sm;
+}
+.title-border-bottom{
+  height: 1px;
+background: linear-gradient(270deg, #071a2f 11.2%, #0378ae 45.98%, #071a2f 83.78%);
+margin-bottom: 1rem;
+}
+.header-section{
+  @apply text-center text-2xl font-medium;
+  color: #00affb;
+font-size: 18px;
+text-align: center;
+// margin: 3rem 0 1.5rem 0;
+}
+.title-with-sub{
+  &:before{
+      position: absolute;
+      content: "";
+      margin: 50px 0px 0px 0px;
+      width: 105px;
+      height: 2px;
+      background-color: #00a5ff;
+      border-radius: 20px;
+      box-shadow: 0 0 7px 0px #008cff;
+  }
+}
